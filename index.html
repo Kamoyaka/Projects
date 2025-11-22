@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamo-yaka.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/ntr" rel="stylesheet">
+    
+    <!-- AOS Animation Library (Added) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+   
+                Kamo-yaka.com
+            </a>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="http://localhost:8080/Home/Home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="http://localhost:8080/About/Aboutus.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills-services" class="nav-link">Skills</a></li>
+                
+                <li class="nav-item"><a href="#testimonials" class="nav-link">The blog</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="g.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- projects-->
+        <section id="projects" class="content-section" data-aos="fade-up">
+            <div class="section-content">
+                <h2 data-aos="fade-down">Featured Projects</h2>
+                <p data-aos="fade-up">Check out some of my recent work that delivered exceptional results for clients</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image"><i class="fas fa-shopping-cart"></i></div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A fully responsive online store with React, featuring product filtering, cart functionality, and secure checkout.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- added cards -->
+                    <div class="projects-grid">
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image"><i class="fas fa-shopping-cart"></i></div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A fully responsive online store with React, featuring product filtering, cart functionality, and secure checkout.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                     <!-- end off added cards -->
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-image"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="project-title">Business Dashboard</h3>
+                        <p class="project-description">Interactive data visualization dashboard with real-time analytics and customizable widgets.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="project-image"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 class="project-title">Travel App UI</h3>
+                        <p class="project-description">Mobile-first travel application with intuitive navigation, booking system, and location services.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="section-content">
+            <h3>Kamoyaka</h3>
+            <p>Creating digital experiences that drive results</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p class="copyright">© 2023 Kamoyaka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- AOS Initialization (Added) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 80
+      });
+    </script>
+</body>
+</html>
